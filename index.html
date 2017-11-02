@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sistema de Licitações</title>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/responsivoStyle.css" media="screen">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/jQuery.js"></script>
+</head>
+    <body>
+        >
+        <header>
+
+        </header>
+        <nav class="nav nav-aberta">
+            <div class="menu">
+                <!--<nav class="topmenu" id="menu">
+                    <a href="#">Inicio</a>
+                    <a href="#">Nova Licitação</a>
+                    <a href="http://">Ver Licitações</a>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                </nav>-->
+                <ul class="listNav">
+                    <li><a class="active" href="index.html"><i class="material-icons">home</i>Home</a></li>
+                    <li><a href="http://"> <i class="material-icons">filter_none</i>Licitações</a></li>
+                    <li><a href="http://"><i class="material-icons">query_builder</i>Historico</a></li>
+                    <li><a href="http://"><i class="material-icons">build</i>Suporte</a></li>
+
+                   
+                </ul>
+            </div>
+       </nav>
+            
+        <section>
+
+        </section>
+        <footer id="rodape">
+            <p>
+                © SGA. All Rights Reserved | Design by
+            </p>
+        </footer>
+
+        <script>
+
+            function menu() {
+                $('.nav-toggle').click(function() {
+                    if($(".nav").hasClass("side-fechado")) {
+                        $('.nav').animate({
+                            left: "0px",
+                        }, 100, function() {
+                            $(".nav").removeClass("side-fechado");
+                        });
+                    }
+                    else {
+                        $('.nav').animate({
+                            left: "-175px",
+                        }, 100, function() {
+                            $(".nav").addClass("side-fechado");
+                        });
+                    }
+                });
+	        }
+	
+            //Menu Sidebar
+            $(window).resize(function() {
+                var tamanhoJanela = $(window).width();
+                $(".nav-toggle").remove();
+                
+                if (tamanhoJanela < 640) { 
+                    $('.nav').css('left', '-175px').addClass('side-fechado');
+                    $('.nav').append( "<div class='nav-toggle'><i class='material-icons'>menu</i></div>" );
+                } else {
+                    $('.nav').css('left', '0px').addClass('side-fechado');
+                }
+                
+                menu();
+            });
+            
+            $(document).ready(function() {
+                var tamanhoJanela = $(window).width();
+                $(".nav-toggle").remove();
+                
+                if (tamanhoJanela < 640) { 
+                    $('.nav').css('left', '-175px').addClass('side-fechado');
+                    $('.nav').append( "<div class='nav-toggle'><i class='material-icons'>menu</i></div>" );
+                } else {
+                    $('.nav').css('left', '0px').addClass('side-fechado');
+                }
+                
+                menu();
+            });
+
+
+
+        </script>
+            
+    </body>
+</html>
