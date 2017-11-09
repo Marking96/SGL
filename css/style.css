@@ -246,3 +246,50 @@ div.tabs button.active {
     text-align: center;
     
 }
+header .dropuser{
+    color: black;
+    float: right;
+    overflow: hidden;
+    margin-right:40px; 
+}
+
+header .icon{
+    font-size: 40px;
+    color: #fff;
+}
+
+.dropuser .btndrop{
+    font-size: 8px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 10px 10px;
+    background-color: inherit;
+}
+header .dropuser-op{
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+header .dropuser-op a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+header .dropuser-op a:hover{
+    background-color: #ddd;
+}
+
+.dropuser:hover .dropuser-op{
+    display: block;
+}
+
