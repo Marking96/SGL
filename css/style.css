@@ -298,3 +298,26 @@ header .dropuser-op a:hover{
     padding: 10px 20px 20px 10px;
 }
 
+table, td, th {
+    
+    border: 1px solid #333;
+    border-collapse: collapse;
+    
+}
+.tb-licitacao th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+ td, th {
+     border: 1px solid #ddd;
+     padding: 6px;
+     text-align: center;
+}
+
+.tb-licitacao tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.tb-licitacao tr:hover {background-color: #ddd;}
