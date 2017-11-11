@@ -68,13 +68,10 @@ p{
     padding: 0px 3px;
 }
 header{
-    height:100px;
     width:auto;
     background-color: #2B4D80;
-    /*! direction: flex; */
     border: none;
     box-sizing: border-box;
-    padding: 10px;
 }
 header .logo{
     width: 20%;
@@ -85,7 +82,6 @@ section{
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    /*! background-color: #2d50844d; */
 }
 
 footer{
@@ -150,7 +146,6 @@ span i.icon-l{
 input[type=password]{
     width: 80%;
     line-height: 40px;
-    /*! float: left; */
     border: none;
     border-radius: 0px;
     padding-left: 5px;
@@ -182,7 +177,6 @@ input[type=email]{
 #cadastra input[type=password]{
     width: 50%;
     line-height: 40px;
-    /*! float: left; */
     border: none;
     border-radius: 0px;
     padding-left: 5px;
@@ -259,11 +253,9 @@ header .icon{
 }
 
 .dropuser .btndrop{
-    font-size: 8px;
     border: none;
     outline: none;
     color: black;
-    padding: 10px 10px;
     background-color: inherit;
 }
 header .dropuser-op{
@@ -291,5 +283,14 @@ header .dropuser-op a:hover{
 
 .dropuser:hover .dropuser-op{
     display: block;
+}
+
+.clear{
+    clear: both;
+}
+
+.logo{
+    /*! margin: 10px; */
+    padding: 10px 20px 20px 10px;
 }
 
