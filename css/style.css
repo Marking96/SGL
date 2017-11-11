@@ -76,6 +76,7 @@ header{
 header .logo{
     width: 20%;
     background-color: #aaa;
+    float: left;
 }
 section{
     display: flex;
@@ -244,7 +245,7 @@ header .dropuser{
     color: black;
     float: right;
     overflow: hidden;
-    margin-right:40px; 
+    margin-right:69px; 
 }
 
 header .icon{
@@ -257,6 +258,7 @@ header .icon{
     outline: none;
     color: black;
     background-color: inherit;
+    margin-top: 5px;
 }
 header .dropuser-op{
     text-align: center;
@@ -289,8 +291,10 @@ header .dropuser-op a:hover{
     clear: both;
 }
 
-.logo{
+.logo , .logo1{
     /*! margin: 10px; */
+    width: 20%;
+    background-color: #aaa;
     padding: 10px 20px 20px 10px;
 }
 
