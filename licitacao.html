@@ -62,36 +62,46 @@
 
         <section>
             <div class="content">
-                <table class="tb-licitacao" style="width:100%">
+                <input type="text" id="filtro_tabela" placeholder="Buscar nesta lista" />
+                </div>
+                <table class="tb-licitacao" style="width:100%" id="tb1">
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th width="350px">Licitação</th>
+                            <th width="100px">Setor</th>
+                            <th width="100px" >Data</th>
+                            <th>Aprova</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    
                     <tr>
-                        <th>N°</th>
-                        <th>Licitação</th>
-                        <th>Setor</th>
-                        <th>Data</th>
-                        <th>Aprova</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
+                        <td>1</td>
+                        <td>ew</td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>22eq</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>wew</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
                 </table>
+                <br>
+                <div id="pageNav"></div>
             </div>
         </section>
         <footer id="rodape">
@@ -100,60 +110,16 @@
             </p>
         </footer>
     </div>
+    <script src="js/Scripts.js"></script>
     <script>
-
-        function menu() {
-            $('.nav-toggle').click(function () {
-                if ($(".nav").hasClass("side-fechado")) {
-                    $('.nav').animate({
-                        left: "0px",
-                    }, 100, function () {
-                        $(".nav").removeClass("side-fechado");
-                    });
-                }
-                else {
-                    $('.nav').animate({
-                        left: "-175px",
-                    }, 100, function () {
-                        $(".nav").addClass("side-fechado");
-                    });
-                }
-            });
-        }
-
-        //Menu Sidebar
-        $(window).resize(function () {
-            var tamanhoJanela = $(window).width();
-            $(".nav-toggle").remove();
-
-            if (tamanhoJanela < 640) {
-                $('.nav').css('left', '-175px').addClass('side-fechado');
-                $('.nav').append("<div class='nav-toggle'><i class='material-icons'>menu</i></div>");
-            } else {
-                $('.nav').css('left', '0px').addClass('side-fechado');
-            }
-
-            menu();
-        });
-
-        $(document).ready(function () {
-            var tamanhoJanela = $(window).width();
-            $(".nav-toggle").remove();
-
-            if (tamanhoJanela < 640) {
-                $('.nav').css('left', '-175px').addClass('side-fechado');
-                $('.nav').append("<div class='nav-toggle'><i class='material-icons'>menu</i></div>");
-            } else {
-                $('.nav').css('left', '0px').addClass('side-fechado');
-            }
-
-            menu();
-        });
+        var pager = new Pager('tb1', 10);
+        pager.init();
+        pager.showPageNav('pager', 'pageNav');
+        pager.showPage(1);
 
 
-
+                
     </script>
-
 </body>
 
 </html>

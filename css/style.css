@@ -304,6 +304,7 @@ table, td, th {
     border-collapse: collapse;
     
 }
+
 .tb-licitacao th{
     padding-top: 12px;
     padding-bottom: 12px;
@@ -314,10 +315,60 @@ table, td, th {
  td, th {
      border: 1px solid #ddd;
      padding: 6px;
-     text-align: center;
+     text-align: left;
 }
 
 .tb-licitacao tr:nth-child(even){
     background-color: #f2f2f2;
 }
 .tb-licitacao tr:hover {background-color: #ddd;}
+
+.pg-ctrl
+{
+	font:bold 16px verdana;
+	color: #0063e3;
+	text-decoration: none; 
+	cursor: pointer;    
+	padding:4px;
+	margin:0px;
+	border: 0px;
+}
+.pg-normal 
+{
+	font:10px verdana;
+	color: #333;
+	text-decoration: none; 
+	cursor: pointer;    
+	background-color:#f9f9f9;
+	padding:3px 6px;
+	margin:1px;
+	border: 1px solid #0063e3;
+}
+
+.pg-selected 
+{
+	font:10px verdana;
+	color: #fff;
+	text-decoration: none;    
+	cursor: pointer;
+	background-color:#0063e3;
+	padding:3px 6px;
+	margin:1px;
+	border: 1px solid #dde;
+}
+
+#pageNav{
+    margin-bottom: 3px;
+}
+
+#filtro_tabela{
+    height: 30px;
+    margin: 5px;
+    float: left;
+    width: 60%;
+    padding: 4px;
+    color: black;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 9px ;
+}
